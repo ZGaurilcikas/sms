@@ -5,6 +5,8 @@ var required_income = obj.required_income;
 
 
 
+// imu tik income iš objekto. 
+// nesugalvoju kaip padaryti, kad 0.41 būtų = 0.5 
 
 var viso = [];
 for (var i = 0; i < obj2.length; i++) {
@@ -12,6 +14,8 @@ for (var i = 0; i < obj2.length; i++) {
 }
 // console.log(viso)
 
+// funkcija skaičiuoja iš duoto skaičiaus objekte "required_income": 11 
+// atiminėja tol kol bus arčiausiai 0
 
 function sum_best(src, val) {
     var result = [];
@@ -27,6 +31,6 @@ function sum_best(src, val) {
     }
     return result;
 }
-
+// į funkciją paduodi array ir sumą reikiamą. 
 console.log(sum_best(viso, required_income))
 
